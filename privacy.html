@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy — SOTA TEH</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            color: #23252b;
+            background: #fbfaf6;
+            line-height: 1.65;
+            padding: 48px 24px 64px;
+        }
+        .wrap { max-width: 680px; margin: 0 auto; }
+        a { color: #d6a626; text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+        .back { font-size: 14px; display: inline-block; margin-bottom: 34px; color: #5c626e; font-weight: 600; }
+        h1 { font-size: 32px; letter-spacing: -0.02em; margin-bottom: 8px; }
+        .lead { color: #5c626e; margin-bottom: 30px; font-size: 16px; }
+        h2 { font-size: 17px; margin: 26px 0 8px; }
+        p, li { font-size: 14.5px; color: #3d414a; }
+        ul { padding-left: 20px; margin: 6px 0; }
+        .legal {
+            margin-top: 44px;
+            padding-top: 18px;
+            scroll-margin-top: 24px;
+            border-top: 1px solid #e9e6de;
+            font-size: 11.5px;
+            color: #8b909b;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a class="back" href="/">← sota-teh.com</a>
+        <h1>Privacy</h1>
+        <p class="lead">The short version: this site doesn’t watch you. No cookies, no analytics,
+           no trackers, nothing loaded from third parties. The only personal data we ever handle
+           is the email you choose to send us.</p>
+
+        <h2>Who we are</h2>
+        <p>SOTA TEH d.o.o., Pod bukvami 24, SI-1000 Ljubljana, Slovenia (“we”) is the controller
+           for the processing described here. Contact: <a class="mail mail-text" data-u="info" data-h="sota-teh.com">info [at] sota-teh [dot] com</a>.</p>
+
+        <h2>What we process, and why</h2>
+        <ul>
+            <li><b>Browsing this site:</b> nothing on our side. We set no cookies and run no
+                analytics, so no consent banner is needed — there is nothing to consent to.
+                The site is served by GitHub Pages (GitHub, Inc.); like any web host, GitHub
+                receives standard connection data such as your IP address in order to deliver
+                the pages.</li>
+            <li><b>Email you send us:</b> your address, name and whatever your message contains.
+                We use it solely to reply and to conduct the business you asked about
+                (GDPR art. 6(1)(b) — steps prior to a contract; art. 6(1)(f) — legitimate
+                interest in answering correspondence). Messages are kept as ordinary business
+                records and are not shared with anyone, except where the law requires it.</li>
+        </ul>
+
+        <h2>Your rights</h2>
+        <p>You may request access, rectification, erasure, restriction, portability, or object to
+           processing — one email to <a class="mail mail-text" data-u="info" data-h="sota-teh.com">info [at] sota-teh [dot] com</a> is
+           enough. You can also lodge a complaint with the Slovenian supervisory authority, the
+           Information Commissioner (<a href="https://www.ip-rs.si" target="_blank" rel="noopener">ip-rs.si</a>).</p>
+
+        <p class="legal" id="legal">
+            SOTA TEH d.o.o. · Pod bukvami 24, SI-1000 Ljubljana, Slovenia ·
+            matična št. (reg. no.) 6150322000 · ID za DDV (VAT) SI30343275 · © 2026
+        </p>
+    </div>
+    <script>
+        (function () {
+            function addr(el) { return el.dataset.u + "@" + el.dataset.h; }
+            document.querySelectorAll("a.mail").forEach(function (a) {
+                a.setAttribute("href", "mailto:" + addr(a));
+            });
+            document.querySelectorAll(".mail-text").forEach(function (el) {
+                el.textContent = addr(el);
+            });
+        })();
+    </script>
+</body>
+</html>
