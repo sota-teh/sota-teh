@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <!-- SOTA TEH logomark: "bars-blocks" — a staircase of blocks, the top one gold. -->
+    <rect x="12" y="40" width="12" height="12" rx="3" fill="#23252b"/>
+    <rect x="27" y="40" width="12" height="12" rx="3" fill="#23252b"/>
+    <rect x="27" y="25" width="12" height="12" rx="3" fill="#23252b"/>
+    <rect x="42" y="40" width="12" height="12" rx="3" fill="#23252b"/>
+    <rect x="42" y="25" width="12" height="12" rx="3" fill="#23252b"/>
+    <rect x="42" y="10" width="12" height="12" rx="3" fill="#f5c542" stroke="#d6a626" stroke-width="1"/>
+</svg>

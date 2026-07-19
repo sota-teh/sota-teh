@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="204" height="40" viewBox="0 0 204 40">
+    <!-- Placeholder wordmark - replace with the official Interblock logo when permission is in hand. -->
+    <rect x="5" y="11" width="18" height="18" fill="#d6563e" transform="rotate(45 14 20)" />
+    <text x="32" y="29" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800"
+          letter-spacing="1.6" fill="#23252b">INTERBLOCK</text>
+</svg>
